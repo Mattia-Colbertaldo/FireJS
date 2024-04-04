@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: gray
+}
+.game{
+    width: 75%;
+    height: 200px;
+    /* border: 1px solid black; */
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+    background-color: gray; 
+
+}
+#character{
+    width: 20px;
+    height: 50px;
+    background-color:sandybrown;
+    position:relative;
+    top: 150px;
+    left: 25%;
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#block{
+    background-color:chocolate;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 100%;
+    /* animation: block 1s infinite linear; */
+}
+@keyframes block{
+    0%{left: 100%;} /* Start from the end of the screen */
+    100%{left: 0%;} /* End past the character */
+}
+h2{
+    text-align: center;
+    /* strange font for games */
+    font-family: "GameFont", sans-serif;
+    font-size: 50px;
+    margin-top: 50px;
+
+}
